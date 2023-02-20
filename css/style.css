@@ -1,0 +1,270 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+header{
+    background-color: rgb(13, 14, 13);
+    padding: 8px;
+}
+.titulo h1{
+    display: flex;
+    justify-content: first baseline;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.search{
+    display: flex;
+    justify-content: flex-end;
+}
+section-1 titulo-2{
+    display: grid;
+}
+.section-1 img{
+    margin-bottom: 30px;
+    width: 80%;
+
+}
+.section-1{
+    display: grid;
+    align-items: center;
+    background-color: aqua;
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+.section-2 img{
+    margin-bottom: 30px;
+    width: 80%;
+}
+.section-2{
+    display: grid;
+    align-items: center;
+    background-color: rgb(0, 255, 200);
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+.section-3 img{
+    margin-bottom: 30px;
+    width: 80%;
+}
+.section-3{
+    display: grid;
+    align-items: center;
+    background-color: rgb(0, 255, 115);
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+.titulo-juegos{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 143, 143);
+}
+.section-4 img{
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 30px;
+}
+.section-4{
+    display: grid;
+    align-items: center;
+    background-color: rgb(0, 255, 115);
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+.section-5 img{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 80%;
+}
+.section-5{
+    display: grid;
+    align-items: center;
+    background-color: rgb(0, 255, 115);
+    width: 100%;
+    height: 600px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: absolute;
+    padding: 2rem 8%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+@media (max-width:778px){
+    header{
+        background-color: rgb(60, 42, 139);
+    }
+    .titulo h1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: flex-start;
+
+    }
+    .navbar li a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: rgb(234, 241, 241);
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    section-1 titulo-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-1 img{
+        width: 50%;
+    }
+    .section-1{
+        height: 1000px;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "h1"
+        "img"
+        "p"
+        "card1"
+        "card2"
+        "card3";
+        justify-items: center;
+    }
+    .section-2 img{
+        width: 50%;
+    }
+    .section-2{
+        height: 1000px;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "h1"
+        "img"
+        "p"
+        "card4"
+        "card5"
+        "card6";
+        justify-items: center;
+    }
+    .section-3 img{
+        width: 50%;
+    }
+    .section-3{
+        height: 1000px;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "h1"
+        "img"
+        "p"
+        "card7"
+        "card8"
+        "card9";
+        justify-items: center;
+    }
+    .titulo-juegos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(41, 143, 143);
+    }
+    .section-4 img{
+        width: 50%;
+    }
+    .section-4{
+        height: 1000px;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "h1"
+        "img"
+        "p"
+        "card1"
+        "card2"
+        "card3";
+        justify-items: center;
+    }
+    .section-5 img{
+        width: 50%;
+    }
+    .section-5{
+        height: 1000px;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas: 
+        "h1"
+        "img"
+        "p"
+        "card4"
+        "card5"
+        "card6";
+        justify-items: center;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .logo{
+        width: 50%;
+    }
+}
